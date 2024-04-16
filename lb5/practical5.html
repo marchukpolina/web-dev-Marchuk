@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgba(88, 84, 84, 0.6);
+  color: white;
+}
+    body {
+            margin: 3px;
+            font-family: 'Arial', sans-serif;
+        }
+ 
+        .navbar {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            justify-content: space-between;
+            top: 0px;
+            background: rgba(88, 84, 84, 0.6);
+            background-blend-mode: darken;
+            background-size: cover;
+            color: white;
+            padding: 10px 20px;
+        }
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+ 
+        .nav-list li {
+            margin-right: 20px;
+        }
+ 
+        .nav-list li:last-child {
+            margin-right: 0;
+        }
+ 
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        .nav-list li a:hover {
+            color: #ffd700;
+        }
+ 
+        .rightNav {
+            text-align: right;
+        }
+ 
+        #search {
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+        }
+ 
+        .btn {
+            background-color: hwb(243 50% 42%);
+            color: #000;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background-color: #000;
+            color: #ffd700;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#Task1">Task1</a></li>
+            <li><a href="#Task2">Task2</a></li>
+            <li><a href="#Task3">Task3</a></li>
+            <li><a href="#Task4">Task4</a></li>
+            <li><a href="#Task5">Task5</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search"
+                   id="search" placeholder="Search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <h1 id="Task1">Task 1</h1>
+   
+    <p>In web development, the CSS box model refers to how HTML elements are modeled in browser engines 
+        and how the dimensions of those HTML elements are derived from CSS properties. 
+        It is a fundamental concept for the composition of HTML webpages.</p>
+        <img src="Boxmodell.png" alt="Boxmodell">
+    <p>The box-sizing property controls how the total width and height of an element are calculated. It determines whether the specified width and height include padding and borders or not.</p>    
+
+    <h1 id="Task2">Task 2</h1>
+
+    <p><b>What Is the Clearfix Hack?</b></p>
+    <p>When you float an element (such as an image or a container), it is taken out of the normal document flow. This can lead to unexpected behavior, especially when elements are stacked 
+next to each other. One common problem arises when the parent container of floated elements ends up with a height of 0. 
+As a result, the layout can break, and content might overlap or spill outside the container. The clearfix hack provides a solution to this issue without resorting to additional structural markup. 
+It ensures that the parent container properly encloses its floated children, preventing layout disruptions.</p>
+    
+        <p><b>When Does It Need to Be Applied?</b></p>
+    <p>You should apply the clearfix hack when:
+Floating Elements: You have floated elements (e.g., images, divs) within a container.
+Parent Container Height Issue: The parent container does not expand to accommodate the height of its floated children, resulting in layout problems.</p>
+
+    <h1 id="#Task3">Task 3</h1>
+    
+    <p>Margin collapse occurs when vertically adjacent margins of block-level elements collide, resulting in a shared margin space. The size of this shared space is determined by the larger margin value. Imagine it as an arm wrestling match: the larger margin “wins” and takes over the shared space.</p>
+    
+        <p><b>margin auto:</b></p>
+    <ul>
+          <li>Horizontal Centering: Applying margin: auto to an element’s left and right margins horizontally centers the element within its container. 
+            It absorbs available horizontal space, ensuring center alignment.</li>
+          <li>Block Elements: Works well with block-level elements (not floated, inline, or absolutely positioned).</li>
+          <li>Faux Float: When applied to just one side, it pushes the element to the opposite side, creating a visual effect similar to floating.</li>
+          <li>Vertical Centering (Tricky): By using margin: auto with equal dimensions (height and width), you can center an element vertically within the browser.</li>
+          <li>Note: Doesn’t work on elements with a specified width of auto (results in 0px margins).</li>
+    </ul>
+    
+    <p><b>negative margins:</b></p>
+    <ul>
+          <li>Image Replacement Trick: Use negative margins to replace regular fonts with “picture” fonts for custom typography.</li>
+          <li>Image Rollovers with Borders: Negative margins prevent layout shifts on image rollovers by compensating for border size.</li>
+          <li>Center Screen Positioning: Center an object in the middle of the browser by using negative margins equal to its height and width.</li>
+          <li>Overlapping Elements: Make one element overlap another for visual effects.</li>
+          <li>Extend Over Padding: Extend an element over its parent’s padding without removing the parent’s padding</li>
+    </ul>
+
+    <h1 id="#Task4">Task 4</h1>
+    <p>The Holy Grail layout problem also encompasses another classic problem: making a footer stick to the bottom of the screen when there is not enough content to fill up the page. 
+This can be solved by adding min-height: 100vh to the container of the page's contents.</p>
+        <p>Holy grail Layout with Dropping Footer:</p>
+        <img src="HolyGrail.png" alt="HolyGrail"> 
+
+    <h1 id="#Task5">Task 5</h1>
+    <p>Achieving this layout can be challenging, but modern CSS techniques make it more manageable. 
+
+There are a few ways to create the Holy Grail layout:</p>
+<ul>
+<li><b>Using Flexbox</b>
+<p>Flexbox allows content-aware sidebars by distributing available space proportionally between the main area and sidebars.
+It considers the width of internal content, making it ideal for responsive designs.</p>
+
+<p>HTML:</p> 
+<img src="t5html.png" alt="htmlcode"> 
+
+<p>CSS:</p>
+<img src="t5css.png" alt="csscode"></li>
+
+<li><b>Using Flexbox</b>
+
+<p>CSS Grid provides powerful layout capabilities.
+It allows you to create complex grid structures with ease.</p>
+
+<img src="t5CSSGrid.png" alt="cssgrid">
+</li>
+</ul>
+
+
+<footer>
+    <p>Marchuk Polina<br>
+    <p>information resource management<br>
+    <p>16.04.2024<br>    
+  </footer>
+  
+
+</body>
+</html>
