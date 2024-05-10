@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .body {
+        background-color: #a3a3a3;
+    }
+    #logo {
+text-align: center;
+width: 50px;
+height: 50px;
+line-height: 50px;
+position: absolute;
+margin: 10px 10px;
+    }
+#header {
+        display: flex;
+        position: sticky; 
+        top: 0px;
+        background: rgba(88, 84, 84, 0.6);
+        background-size: cover;
+        color: white;
+        padding: 10px 20px ;
+        text-align: left;
+    }
+    .list {
+            display: flex;
+            list-style: none;
+        }
+        .list li {
+            margin-right: 160px;
+        }
+        .list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        .list li a:hover {
+            color: #ffd700;
+        }
+   #main p,h3 {
+        font-size: larger;
+        text-align: center;
+    }
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-flow: row;
+
+   }
+    .section{
+      font-size: larger;
+      text-align: center;
+      }
+#news {
+    background: rgba(88, 84, 84, 0.6);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+     }   
+    #news p {
+        text-align: center;
+        
+    }
+    #news div {
+        padding: 20px;
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div id="logo">
+        <img src="logo.jpeg" alt="logo">
+    </div>
+    <header id="header">
+        <ul class="list" style="margin-left: 70px;">
+            <li><a href="#home">home</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#news">news</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </header>
+    <main id="main">
+        <img src="main_photo.jpeg" alt="main_photo" style="float: left;">
+        <h3>about</h3>
+        <p>Travel is not just about reaching a destination; it's about the moments, memories, and connections made along the way.
+Whether you're seeking the tranquility of a pristine beach, the thrill of exploring vibrant cities, or the awe-inspiring wonders of nature, 
+we're here to curate tailor-made experiences that cater to your every desire.</p>
+        </main>
+<div class="section">our services</div>
+<div id="news">
+
+    <div> <img src="news1.jpeg" alt="photo" style="float: top;"> <h3>customized itineraries</h3> <p>Whether you're planning a romantic getaway,
+family vacation, or solo adventure, we work with you to create a personalized itinerary that reflects your interests and preferences.</p>
+<button type="button">learn more</button> </div>
+
+    <div> <img src="news2.jpeg" alt="photo" style="float: top;"> <h3>luxury travel</h3><p>Indulge in the ultimate luxury with our curated selection of 
+five-star accommodations, private tours, and VIP experiences designed to pamper and delight.</p>
+<button type="button">learn more</button> </div>
+
+    <div> <img src="news3.jpeg" alt="photo"  style="float: top;"> <h3>group travel</h3><p>From corporate retreats to destination weddings, our group travel 
+specialists take care of all the details, ensuring a seamless and unforgettable experience for you and your companions.</p>
+<button type="button">learn more</button> </div>
+
+    <div> <img src="news4.jpeg" alt="photo" style="float: top;"> <h3>specialty tours</h3><p>Immerse yourself in the culture, history, and natural beauty of 
+each destination with our selection of specialty tours, including culinary adventures, wildlife safaris, and wellness retreats.</p>
+<button type="button">learn more</button> </div>
+
+</div>
+</div>
+</body>
+</html>

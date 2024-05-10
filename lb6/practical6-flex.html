@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+      .div{
+          height: 380px;
+          width: 100%;
+          margin: 10px;
+          background-image: url(news.jpeg);
+          background-repeat:no-repeat;
+          background-size: cover;
+      }
+      .flex-container {
+            display: flex;
+            background-color: transparent;
+      }
+      .news-container {
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: column;
+          gap: 20px; 
+      }
+      .news {
+          display: flex;
+          height: 200px;
+          width: 800px;
+          margin: 10px;
+          background-color: rgba(88, 84, 84, 0.6);
+          padding: 10px;
+      }
+      h3 {
+        margin-left: 30px;
+        text-align: top;
+      }
+      p {
+          padding-top: 40px;
+          margin: 0;
+          font-size: 20px;
+          text-align: center;
+          vertical-align: middle;
+      }
+      .navigation-menu {
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: column;
+          gap: 20px;
+          background-color: #585554;
+      }
+      .box-outer {
+          border: 1px solid #585554;
+          background-color: #585554;
+          margin-bottom: 1rem;
+          padding: 1rem;
+          border-radius: .12rem;
+      }
+      .heading {
+          margin-bottom: 1rem;
+      }
+      .input-control {
+          transition: border .1s linear 0s, box-shadow .1s, width .25s, color .2s;
+          border: 1px solid #ced4da;
+          box-shadow: 0 1px 3px rgb(50 50 93 / 10%), 0 1px 0 rgb(0 0 0 / 2%);
+          display: block;
+          width: 100%;
+          padding: .375rem .75rem;
+          font-size: .969rem;
+          font-weight: 400;
+          line-height: 1.6;
+          color: #424345;
+          background-color: #FFF;
+          background-clip: padding-box;
+          appearance: none;
+          border-radius: .12rem;
+          margin-bottom: 1rem;
+      }
+      .input-control:focus {
+          border-color: #9fd4fc;
+          box-shadow: 0 0 0 4px rgb(0 149 255 / 15%);
+          background-color: #fffffa;
+          outline: 0;
+      }
+      .button {
+          color: #FFFFFF;
+          box-shadow: 0 1px 3px rgb(50 50 93 / 10%), 0 1px 0 rgb(0 0 0 / 2%);
+          background: #706565;
+          border: 0;
+          padding: .5rem;
+          border-radius: .12rem;
+      }
+      .button:focus {
+          background: #ddd;
+      }
+    </style>
+</head>
+<body>
+  <div class="header">
+    <div class="div">
+  </div></div>
+  <div class="flex-container">
+    <div class="news-container">
+      <div class="news">
+        <img src="news1.jpeg" alt="main_photo" style="float: left;">
+        <h3>about</h3>
+        <p>Travel is not just about reaching a destination; it's about the moments, memories, and connections made along the way.
+Whether you're seeking the tranquility of a pristine beach, the thrill of exploring vibrant cities, or the awe-inspiring wonders of nature, 
+we're here to curate tailor-made experiences that cater to your every desire.</p>
+      </div>
+      <div class="news">
+        <img src="news1.jpeg" alt="photo" style="float: top;"> <h3>customized itineraries</h3> <p>Whether you're planning a romantic getaway,
+            family vacation, or solo adventure, we work with you to create a personalized itinerary that reflects your interests and preferences.</p>
+      </div>
+      <div class="news">
+        <img src="news2.jpeg" alt="photo" style="float: top;"> <h3>luxury travel</h3><p>Indulge in the ultimate luxury with our curated selection of 
+            five-star accommodations, private tours, and VIP experiences designed to pamper and delight.</p>            
+      </div>
+    </div>
+    <div class="navigation-menu">
+      <div class="box-outer">
+        <form name="signup_form" method="post" autocomplete="off">
+            <h2 class="heading">Sign Up Form</h2>
+            <label>First Name</label>
+            <input type="text" name="first_name" class="input-control" placeholder="Your first name">
+            <label>Last Name</label>
+            <input type="text" name="last_name" class="input-control" placeholder="Your last name">
+            <label>Email</label>
+            <input type="text" name="email" class="input-control" placeholder="Your email address">
+            <label>New Password</label>
+            <input type="password" name="password" class="input-control">
+            <input type="submit" name="submit" class="button" value="Signup Now For FREE">
+        </form>
+        <hr>
+        <div>By clicking Sign Up, you are indicating that you have read and agree to the <a href="#" target="_blank"><u>Terms of Use</u></a> and <a href="#" target="_blank"><u>Privacy Policy</u></a>.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
